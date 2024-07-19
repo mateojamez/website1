@@ -1,0 +1,267 @@
+@font-face {
+    font-family: "fredoka_dingbatsregular";
+    src: url("fredoka_dingbats-webfont.woff2") format('woff2'),
+         url("fredoka_dingbats-webfont.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "fredoka_oneregular";
+    src: url("fredokaone-regular-webfont.woff2") format('woff2'),
+         url("fredokaone-regular-webfont.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    font-family: 'fredoka_oneregular', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: teal;
+    font-size: 16px;
+}
+
+.navbarback {
+    width: 15rem;
+    align-items: center;
+    background: #fff;
+    height: 4.375rem;
+    position: fixed;
+}
+
+nav {
+    height: 1.25rem;
+    border: solid teal;
+    background:#fff;
+    align-items: center;
+    padding: .625rem;
+    border-radius: .625rem;
+    box-shadow: 0.5rem 0.5rem;
+    float: center;
+}
+
+.navtext {
+    float: center;
+    font-size: 1.125rem;
+    font-family:'fredoka_oneregular';
+    text-align: center;
+}
+
+.headertext {
+    float: center;
+    font-size: 5rem;
+    font-family:'fredoka_oneregular';
+    text-align: center;
+}
+
+.header2text {
+    float: center;
+    font-size: 3.5rem;
+    font-family:'fredoka_oneregular';
+    text-align: center;
+}
+
+.bigtext {
+    font-size: 2.75rem;
+    font-family:'fredoka_oneregular';
+    text-align: center;
+}
+
+.textboxfourhigh {
+    height: 2.5rem;
+    width: auto;
+}
+
+.center_h {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.center_v {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);  
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.center_text {
+    text-align:right;
+    font-size: 2rem;
+}
+
+.resizedimage {
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.container1 {
+    position: relative;
+    height: 46.875rem;
+    width: 60%;
+    display: flex;
+    border: solid teal;
+    border-width: 1.25rem;
+    border-radius: 1.25rem;
+    background: 	#E2F1F7;
+    margin-bottom: 1.25rem;
+}
+
+.container2 {
+    position: relative;
+    height: 37.5rem;
+    width: 60%;
+    display: flex;
+    border: solid teal;
+    border-width: 1.25rem;
+    border-radius: 1.25rem;
+    background: 	#E2F1F7;
+    margin-bottom: 1.25rem;
+}
+
+.container3 {
+    position: relative;
+    height: 6.25rem;
+    width: 32rem;
+    display: flex;
+    border: solid teal;
+    border-width: 1.25rem;
+    border-radius: 1.25rem;
+    background: 	#E2F1F7;
+    margin-bottom: 1.25rem;
+}
+
+.container4{
+    position: relative;
+    height: auto;
+    width: 60%;
+    border: solid teal;
+    border-width: 1.25rem;
+    border-radius: 1.25rem;
+    background: 	#E2F1F7;
+    margin-bottom: 1.25rem;
+}
+
+
+.item1 { grid-area: a1; }
+.item2 { grid-area: a2; }
+.item3 { grid-area: a3; }
+.item4 { grid-area: a4; }
+.item5 { grid-area: a5; }
+.item6 { grid-area: a6; }
+
+.grid-container1 {
+   display: grid;
+   grid-template-areas:
+    'a1';
+   gap: 100px;
+   background-color: #E2F1F7;
+   padding: 50px;
+}
+
+  .grid-container1 > div {
+   background-color: rgba(52, 196, 221, 0.5);
+   text-align: center;
+   padding: 12.5rem 0;
+   font-size: 1.875rem;
+   border-radius: 50px;
+}
+
+.grid-container1 > div:hover {
+    background-color: rgb(52, 196, 221);
+    text-align: center;
+    padding: 200px 0;
+    font-size: 1.875;
+    border-radius: 50px;
+    transform: scale(1.05);
+    color: #E2F1F7;
+ }
+
+ .grid-container2 {
+    display: grid;
+    grid-template-areas:
+     'a1 a2'
+     'a3 a4'
+     'a5 a6';
+    gap: 100px;
+    background-color: #E2F1F7;
+    padding: 50px;
+ }
+ 
+   .grid-container2 > div {
+    background-color: #f6e6bf;
+    text-align: center;
+    padding: 200px 0;
+    font-size: 1.875rem;
+    border-radius: 50px;
+    color: #ac8b6d;
+ }
+ 
+ .grid-container2 > div:hover {
+     background-color: #ac8b6d;
+     text-align: center;
+     padding: 200px 0;
+     font-size: 1.875rem;
+     border-radius: 50px;
+     transform: scale(1.05);
+     color: #f6e6bf;
+  }
+
+.split {
+    height: 100%;
+    width: 50%;
+        position: fixed;
+        z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+  }
+
+  .left {
+    left: 0;
+  }
+
+  .right {
+    right: 0;
+  }
+
+.trifold_left {
+    height: 100%;
+    width: 10%;
+        position: fixed;
+        z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    left: 0;
+}
+
+.trifold_right {
+    height: 100%;
+    width: 10%;
+        position: fixed;
+        z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    right: 0;
+}
+
+.trifold_middle {
+    height: 100%;
+    width: 80%;
+        position: fixed;
+        z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    left: 10%;
+}
+
